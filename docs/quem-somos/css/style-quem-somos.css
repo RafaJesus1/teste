@@ -1,0 +1,25 @@
+.insta-integrantes {
+    background-color: #401317e1;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    border-radius: 4px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.insta-integrantes p {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.insta-integrantes img:hover {
+    scale: 1.05;
+    opacity: 0.6;
+}
