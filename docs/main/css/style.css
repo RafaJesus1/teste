@@ -1,0 +1,269 @@
+@font-face {
+    font-family: 'Cordelina';
+    src: url(/main/fonts/cordelina.otf);
+    font: normal;
+}
+
+body, ul, li, p {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.4rem;
+    font-family: 'Cordelina', sans-serif;
+}
+
+body {
+    background-color: rgba(245, 245, 245, 0.696);
+}
+
+@keyframes esq {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.animation-esq {
+    animation: esq linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+@keyframes dir {
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.animation-dir {
+    animation: dir linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/* HEADER */
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    display: flex;
+    background-color: #401317e1;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+
+@media (max-width: 750px) {
+    .header {
+        justify-content: center;
+    } 
+
+    .header img {
+        margin-left: 120px;
+    }
+}
+
+@media (max-width: 329px) {
+    .header img {
+        margin-left: 80px;
+    }
+}
+
+.header img {
+    width: 40%;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+    transition: all 0.5 ease;
+
+}
+
+.menu li:hover {
+    background-color: rgba(0, 0, 0, 0.2)
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+
+/* Apresentação */
+
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.box-presentation {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: #401317e1;
+}
+
+.box-presentation p {
+    color: white;
+    font-size: 1.4rem;
+    margin: 15px;
+}
+
+/* Galeria de Fotos */
+
+h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.galeria-de-fotos {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.galeria-de-fotos > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+/* Video */
+
+.video {
+    margin-top: 2rem;
+}
+
+/* Formas de Ajudar */
+
+.apoie-o-projeto {
+    max-width: 1200px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    /* border: solid black 2px; */
+    display: flex;
+    justify-content: center;
+    /* flex: 1 1 200px; */
+    flex-wrap: wrap;
+}
+
+.pix {
+    background-color: #401317e1;
+    border: solid black 3px;
+    border-radius: 5px;
+    padding: 3rem;
+    margin: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+.pix img {
+    max-width: 250px;
+    border-radius: 5px;
+}
+
+.insta {
+    background-color: #401317e1;
+    border: solid black 3px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+}
+
+.insta img {
+    margin-left: 80px;
+    transition: all 0.5s ease;
+}
+
+.insta img:hover {
+    opacity: 0.8;
+    scale: 1.05;
+    
+}
+
+video {
+    margin-left: 15%;
+    width: 70%;
+    height: 50rem;
+}
+
+
+
+.contato {
+    background-color: #401317e1;
+    border: solid black 3px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+}
+
+/* Sobre Nós */
+
+.sobre-nos {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.txt-sobrenos {
+    background-color: #401317e1;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    border: black solid 3px;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+    max-width: 100%;
+    background-color: #401317e1;
+    padding: 1rem;
+    margin-top: 10rem;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+
+
+
+
+
