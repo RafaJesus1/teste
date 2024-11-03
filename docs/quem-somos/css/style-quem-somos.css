@@ -25,3 +25,11 @@
     scale: 1.05;
     opacity: 0.6;
 }
+
+.bg-marrom {
+    background-color: #401317e1;
+}
+
+.menu li {
+    color: white;
+}

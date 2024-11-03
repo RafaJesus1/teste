@@ -144,6 +144,7 @@ img {
     flex-wrap: wrap;
     max-width: 900px;
     margin: 0 auto;
+    margin-top: 2rem;
 }
 
 .galeria-de-fotos > div {
@@ -161,7 +162,7 @@ img {
 
 .apoie-o-projeto {
     max-width: 1200px;
-    background-color: whitesmoke;
+    /* background-color: whitesmoke; */
     margin: 0 auto;
     /* border: solid black 2px; */
     display: flex;
@@ -181,7 +182,8 @@ img {
 }
 
 .pix img {
-    max-width: 250px;
+    max-width: 200px;
+    margin-left: 1rem;
     border-radius: 5px;
 }
 
@@ -261,6 +263,14 @@ footer ul li {
     margin: 1rem;
     font-size: 1rem;
     color: white;
+}
+
+h5 {
+    font-family: 'Cordelina';
+}
+
+.bg-marrom {
+    background-color: #401317e1;
 }
 
 
