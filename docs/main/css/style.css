@@ -90,6 +90,29 @@ a {
     display: flex;
 }
 
+#burguer {
+    width: 5rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    cursor: pointer;
+    display: none;
+}
+
+#burguer:hover {
+    opacity: 0.9;
+}
+
+@media (max-width: 658px) {
+    .menu {
+        display: none;
+    }
+
+    #burguer {
+        display: block;
+    }
+}
+
 .menu li {
     margin-left: 10px;
     transition: all 0.5 ease;
@@ -104,6 +127,8 @@ a {
     display: block;
     padding: 10px;
 }
+
+
 
 
 /* Apresentação */
@@ -152,11 +177,6 @@ img {
     margin: 10px;
 }
 
-/* Video */
-
-.video {
-    margin-top: 2rem;
-}
 
 /* Formas de Ajudar */
 
@@ -272,6 +292,8 @@ h5 {
 .bg-marrom {
     background-color: #401317e1;
 }
+
+
 
 
 

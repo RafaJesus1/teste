@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="main/css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
     <link rel="shortcut icon" type="imagex/png" href="main/icons/logo-1.ico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     
-    <header class="header container-fluid" id="pagina-inicial">
+    <header class="header" id="pagina-inicial">
         <a href="index.html"><img src="./main/imgs/logo.svg" alt="logo" class="logo" ></a>
         <nav>
-            <ul class="menu">
+            <img src="./main/icons/menu_26dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="" id="burguer" onclick="clickMenu()">
+            <ul class="menu" id="itens">
                 <li><a href="index.html">Página Inicial</a></li>
                 <li><a href="index.html#section-2">Apoie o Projeto</a></li>
                 <li><a href="galeria-fotos.html">Galeria de Fotos</a></li>
@@ -25,8 +27,9 @@
 
     <h1>A Associação Caravana Getsêmani</h1>
     <article class="box-presentation">
-        <p>Um projeto que busca melhorar e trazer direitos básicos para o povo sertanejo, que muito das vezes são esquecidos.
-            A Associação Caravana Getsêmani, espalha sua generosidade e palavra através do evangelho, além de amor, cuidado, saúde e lazer.
+        <p>A Associação Getsêmani foi criada a 8 anos atrás com o intuito de fornecer
+          assistência as pessoas que precisam de suporte, seja ela psicóloga, emocional, física e espiritual.
+          <br>A nossa equipe conta com suporte médico, odontológico e  nutricional e sempre que possível fornecemos cestas básicas para famílias que realmente precisam indicadas por assistência social e o missionário da região.
         </p>
     </article>
 
@@ -38,17 +41,17 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./main/imgs/1ec2008c-851b-4ce4-ade6-4b8de4003078.jpg" class="d-block w-50 mx-auto mt-5" alt="...">
+            <img src="./main/imgs/1ec2008c-851b-4ce4-ade6-4b8de4003078.jpg" class="d-block w-50 w-sm-80 mx-auto mt-5" alt="...">
             <div class="carousel-caption d-none d-md-block d-sm">
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./main/imgs/b17049c3-afb5-43b3-8fa0-a73d7974bb69.jpg" class="d-block w-50 mx-auto mt-5" alt="...">
+            <img src="./main/imgs/b17049c3-afb5-43b3-8fa0-a73d7974bb69.jpg" class="d-block w-50 w-sm-80 mx-auto mt-5" alt="...">
             <div class="carousel-caption d-none d-md-block d-sm">
             </div>
           </div>
           <div class="carousel-item">
-            <img src="./main/imgs/401a3926-0bbd-4795-9098-e3a377b2b202.jpg" class="d-block w-50 mx-auto mt-5" alt="...">
+            <img src="./main/imgs/401a3926-0bbd-4795-9098-e3a377b2b202.jpg" class="d-block w-50 w-sm-80 mx-auto mt-5" alt="...">
             <div class="carousel-caption d-none d-md-block d-sm">
             </div>
           </div>
@@ -78,7 +81,15 @@
             <li>&copy; O site é um projeto interdisciplinar e todos os direitos reservados para a Associação e ao grupo.<li>
         </ul>
     </footer>
-
+    <script>
+      function clickMenu() {
+        if (itens.style.display == 'flex') {
+          itens.style.display = 'none';
+        } else {
+          itens.style.display = 'flex';
+        }
+      }
+    </script>
 </body>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
